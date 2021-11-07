@@ -1,0 +1,20 @@
+/* support */
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+.donate .step{
+  flex: 1;
+}
+
+.donate .step .img{
+  text-align: center;
+  height: 50px;
+}
+
+.donate .step .description p{
+  font-weight: 800;
+  text-align: center;
+}
