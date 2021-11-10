@@ -6,10 +6,14 @@
 }
 
 .donate .step{
+  flex: 2;
+}
+
+.donate .arrow{
   flex: 1;
 }
 
-.donate .step .img{
+.donate .img{
   text-align: center;
   height: 50px;
 }
@@ -18,6 +22,7 @@
   font-weight: 800;
   text-align: center;
 }
+
 
 /* modal */
 /* The Modal (background) */
@@ -42,12 +47,52 @@
   /* Black w/ opacity */
 }
 
+.formlabel{
+  font-weight: 700;
+}
+
+.necessary{
+      color: #ff0000;
+      font-weight: normal;
+}
+
+
+.formrow{
+  width: 100%;
+  padding: 10px 0;
+}
+
+.formrow .textinput{
+  width: 100%;
+}
+
+
+.formrow .half{
+  display: inline-block;
+  width: 48%;
+}
+
+.formrow .half-r {
+  display: inline-block;
+  width: 48%;
+  margin-left: 3%;
+}
+
+.formrow .whole{
+  width: 100%;
+}
+
+.centerbutton {
+  display: inline-block;
+  margin: auto 0;
+}
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   /* 15% from the top and centered */
-  padding: 20px;
+  padding: 50px 100px;
   border: 1px solid #888;
   width: 80%;
   /* Could be more or less, depending on screen size */

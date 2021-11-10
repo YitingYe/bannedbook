@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0041)https://bannedbooksmuseum.com/support-us/ -->
 <html lang="en">
 
 <head>
@@ -86,7 +85,7 @@
 
 		a:hover,
 		a:focus {
-			color: #000000;
+			color: #C90000;
 		}
 
 		body,
@@ -2086,7 +2085,10 @@
 			display: flex
 		}
 	</style>
-	<link rel="stylesheet" id="astra-google-fonts-css" href="./Support us - Banned Books Museum_files/css" media="all">
+	<link rel='stylesheet' id='astra-google-fonts-css'
+		href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C%2C600&#038;display=fallback&#038;ver=3.7.4'
+		media='all' />
+	<!-- <link rel="stylesheet" id="astra-google-fonts-css" href="./Support us - Banned Books Museum_files/css" media="all"> -->
 	<link rel="stylesheet" id="wp-block-library-css" href="./Support us - Banned Books Museum_files/style.min(1).css"
 		media="all">
 	<link rel="stylesheet" id="hfe-style-css" href="./Support us - Banned Books Museum_files/header-footer-elementor.css"
@@ -2125,12 +2127,15 @@
 	<link rel="stylesheet" id="astra-addon-css-css"
 		href="./Support us - Banned Books Museum_files/astra-addon-617fe2bdd74140-40352618.css" media="all">
 	<link rel="stylesheet" id="scoar-theme-css-css" href="./Support us - Banned Books Museum_files/style.css" media="all">
-	<link rel="stylesheet" id="google-fonts-1-css" href="./Support us - Banned Books Museum_files/css(1)" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css"
+		href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.8.1"
+		media="all">
 	<link rel="stylesheet" id="elementor-icons-shared-0-css"
 		href="./Support us - Banned Books Museum_files/fontawesome.min.css" media="all">
 	<link rel="stylesheet" id="elementor-icons-fa-brands-css"
-		href="./Support us - Banned Books Museum_files/brands.min.css" media="all">
-<!--prototype css-->
+		href="https://bannedbooksmuseum.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css"
+		media="all">
+	<!--prototype css-->
 	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if IE]>
@@ -2251,7 +2256,8 @@ flexibility(document.documentElement);
 													<a href="https://bannedbooksmuseum.com/support-us/" aria-current="page"
 														class="menu-link">Support us</a>
 												</li>
-												<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a
+												<li id="menu-item-24"
+													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a
 														href="Exhibition.html" class="menu-link">Exhibition</a></li>
 												<li id="menu-item-252"
 													class="menu-item menu-item-type-post_type menu-item-object-page menu-item-252"><a
@@ -2501,12 +2507,22 @@ flexibility(document.documentElement);
 																						<p>Fill in the form</p>
 																					</div>
 																				</div>
+																				<div class="arrow">
+																					<div class="img">
+																						<img src="icon/arrow.svg" alt="">
+																					</div>
+																				</div>
 																				<div class="step">
 																					<div class="img">
 																						<img src="icon/mail.svg" alt="">
 																					</div>
 																					<div class="description">
 																						<p>Received the confirmation letter</p>
+																					</div>
+																				</div>
+																				<div class="arrow">
+																					<div class="img">
+																						<img src="icon/arrow.svg" alt="">
 																					</div>
 																				</div>
 																				<div class="step">
@@ -2525,29 +2541,100 @@ flexibility(document.documentElement);
 																		class="elementor-element elementor-element-7819f6f elementor-widget elementor-widget-button"
 																		data-id="7819f6f" data-element_type="widget" data-widget_type="button.default">
 																		<div class="elementor-widget-container">
-																			<div class="elementor-button-wrapper">
-																				<a href="" target="_blank"
-																					class="elementor-button-link elementor-button elementor-size-sm"
+																			<div class="elementor-button-wrapper" style="text-align: center;">
+																				<p>Fill in the form or <a href="https://www.facebook.com/bannedbooksmuseum"
+																						target="_blank">Contact us on Facebook</a></p>
+
+																				<a id="myBtn" class="elementor-button-link elementor-button elementor-size-sm"
 																					role="button">
 																					<span class="elementor-button-content-wrapper">
-																						<span class="elementor-button-text">Donate Book</span>
+																						<span class="elementor-button-text">I Want to Donate Book</span>
 																					</span>
 																				</a>
 																			</div>
 																		</div>
 																		<!-- form modal -->
 																		<!-- Trigger/Open The Modal -->
-																		<button id="myBtn">Open Modal</button>
-																		
+																		<!-- <button id="myBtn">Donate Book</button> -->
+
 																		<!-- The Modal -->
 																		<div id="myModal" class="modal">
-																		
+
 																			<!-- Modal content -->
 																			<div class="modal-content">
 																				<span class="close">&times;</span>
-																				<p>Some text in the Modal..</p>
+																				<h3>Book Donation</h3>
+																				<form class="donateform">
+																					<div class="formrow">
+																						<div class="half">
+																							<label class="formlabel" for="dname">Doner Name</label><span
+																								class="necessary"> *</span><br>
+																							<input class="textinput" type="text" id="dname" name="dname"
+																								placeholder="First name">
+																						</div>
+																						<div class="half-r">
+																							<input class="textinput" type="text" id="dname" name="dname"
+																								placeholder="Last name">
+																						</div>
+																					</div>
+																					<div class="formrow">
+																						<div class="half">
+																							<label class="formlabel" for="email">Email</label><span class="necessary">
+																								*</span><br>
+																							<input class="whole" type="text" id="email" name="email">
+																						</div>
+																						<div class="half-r">
+																							<label class="formlabel" for="phone">Phone Number</label>
+																							<input class="textinput" type="text" id="phone" name="phone">
+																						</div>
+																					</div>
+																					<div class="formrow">
+																						<div class="half">
+																							<label class="formlabel" for="bname">Book Name</label><span
+																								class="necessary"> *</span><br>
+																							<input class="textinput" type="text" id="bname" name="bname">
+																						</div>
+																						<div class="half-r">
+																							<label class="formlabel" for="country">Country</label><span
+																								class="necessary"> *</span><br>
+																							<input class="textinput" type="text" id="country" name="country"
+																								placeholder="Where this book is banned">
+																						</div>
+																					</div>
+																					<div class="formrow">
+																						<div class="whole">
+																							<label class="formlabel" for="intro">Book Introduction</label><br>
+																							<input class="textinput" type="text" id="intro" name="intro">
+																						</div>
+																					</div>
+																					<div class="formrow">
+																						<div class="whole">
+																							<label class="formlabel" for="reason">Banned Reason</label><span
+																								class="necessary"> *</span><br>
+																							<input class="textinput" type="text" id="reason" name="reason">
+																						</div>
+																					</div>
+																					<div class="formrow">
+																						<div class="whole">
+																							<label class="formlabel" for="deliver">Delivery</label><span
+																								class="necessary"> *</span><br>
+																							<div class="half">
+																								<input class="formradio" type="radio" id="deliver" name="deliver"
+																									value="post">
+																								<label for="deliver">Post</label>
+																							</div>
+																							<div class="half-r">
+																								<input class="formradio" type="radio" id="deliver" name="deliver"
+																									value="post">
+																								<label for="deliver">In person</label>
+																							</div>
+
+																						</div>
+																					</div>
+																					<input class="centerbutton" type="submit" value="submit">
+																				</form>
 																			</div>
-																		
+
 																		</div>
 
 																	</div>
@@ -2649,9 +2736,11 @@ flexibility(document.documentElement);
 																	class="elementor-element elementor-element-af943c0 elementor-widget elementor-widget-heading"
 																	data-id="af943c0" data-element_type="widget" data-widget_type="heading.default">
 																	<div class="elementor-widget-container">
-																		<h4 class="elementor-heading-title elementor-size-default">Nobody can do everything, but everyone can do something!</h4>
-																		<p><span>If you agree with our vision and would like to support Banned Books through volunteering, feel free to have a chat with
-																		us by coming over to the museum or by contacting us.</span>
+																		<h4 class="elementor-heading-title elementor-size-default">Nobody can do everything,
+																			but everyone can do something!</h4>
+																		<p><span>If you agree with our vision and would like to support Banned Books through
+																				volunteering, feel free to have a chat with
+																				us by coming over to the museum or by contacting us.</span>
 																		</p>
 																	</div>
 																</div>
