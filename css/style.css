@@ -113,8 +113,5 @@
   cursor: pointer;
 }
 
-/* overwrite */
-.elementor img {
-  height: 600px;
-}
+
 
